@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+<script>
+// cerner_2^5_2017
+var imgAngle = 0.0;
+function surroundHealthCare(){
+	imageStyle=document.getElementById('cerner').style;
+	imageStyle.position='absolute';
+	imageStyle.left = Math.floor(300 + (250 * Math.cos(imgAngle))) + "px";
+	imageStyle.top = Math.floor(300 + (250 * Math.sin(imgAngle))) + "px";
+
+	imgAngle = imgAngle + 0.01;
+}
+window.onload =	function(){
+		imageStyle = document.getElementById('healthcare').style;
+		imageStyle.position='absolute';
+		imageStyle.left = "325px";
+		imageStyle.top = "325px";
+		setInterval(surroundHealthCare,20);
+}
+</script>
+</head>
+<body>
+<img id='cerner' src="https://pbs.twimg.com/profile_images/902941066097287168/wVythqcn_400x400.jpg" height="150" width="150" />
+<img id='healthcare' src="https://qph.ec.quoracdn.net/main-qimg-8401a36dfb4c1bc1deeb98f51a60ceb0" height="100" width="100" left="400px" top="400px" position="absolute"/>
+</body>
+</html>
