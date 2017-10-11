@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<style>
+.surround {
+  padding: 100px;
+  height: 300px;
+  width: 300px;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  -webkit-animation:spin 4s linear infinite;
+  -moz-animation:spin 4s linear infinite;
+  animation:spin 4s linear infinite;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg);} }
+</style>
+<div class='surround'>
+<img id='cerner' src="https://pbs.twimg.com/profile_images/902941066097287168/wVythqcn_400x400.jpg" style="height:75px; width75px;" />
+</div>
+<img id='healthcare' src="https://qph.ec.quoracdn.net/main-qimg-8401a36dfb4c1bc1deeb98f51a60ceb0" style="height:75px; width75px; left:200px; top:200px; position:absolute"/>
+</body>
+</htm>
